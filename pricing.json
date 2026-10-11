@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "updated": "2026-10-11",
-  "unit": "USD per 1M tokens",
+  "updated": "2026-10-12",
+  "unit": "models: USD per 1M tokens / items: USD per unit (枚・秒・回・100万トークン)",
   "models": {
     "claude-haiku-4-5":       {"input": 1.00,  "output": 5.00,  "cache_write": 1.25,  "cache_read": 0.10},
     "claude-sonnet-5-5":      {"input": 2.00,  "output": 10.00, "cache_write": 2.50,  "cache_read": 0.20},
@@ -17,5 +17,36 @@
     "claude": {"light": "claude-haiku-4-5", "standard": "claude-sonnet-5-5", "top": "claude-opus-5-5"},
     "codex":  {"light": "gpt-6-luna", "standard": "gpt-6.1-sol", "top": "gpt-6-astra"},
     "gemini": {"light": "gemini-3.1-flash-lite", "standard": "gemini-3.8-flash", "top": "gemini-3.1-pro-preview"}
+  },
+  "items": {
+    "image.openai.low":                {"usd": 0.016, "model": "gpt-image-1"},
+    "image.openai.medium":             {"usd": 0.063, "model": "gpt-image-1"},
+    "image.openai.high":               {"usd": 0.25, "model": "gpt-image-1"},
+    "image.gemini.fast":               {"usd": 0.039, "model": "gemini-2.5-flash-image"},
+    "image.gemini.standard":           {"usd": 0.039, "model": "gemini-2.5-flash-image"},
+    "image.gemini.ultra":              {"usd": 0.039, "model": "gemini-2.5-flash-image"},
+    "image.gemini.reference":          {"usd": 0.039, "model": "gemini-2.5-flash-image"},
+    "image.openai.reference":          {"usd": 0.08, "model": "gpt-image-1"},
+    "image.openai.reference.low":      {"usd": 0.033, "model": "gpt-image-1"},
+    "image.openai.reference.high":     {"usd": 0.267, "model": "gpt-image-1"},
+    "video.runway.turbo":              {"usd": 0.05, "model": "gen4_turbo"},
+    "video.veo.fast":                  {"usd": 0.15, "model": "veo-3.0-fast-generate-001"},
+    "video.veo.standard":              {"usd": 0.4, "model": "veo-3.0-generate-001"},
+    "text.claude":                     {"usd": 0.2},
+    "text.codex":                      {"usd": 0.1},
+    "text.gemini":                     {"usd": 0.4},
+    "tokens.codex.input":              {"usd": 1.25},
+    "tokens.codex.cached":             {"usd": 0.125},
+    "tokens.codex.output":             {"usd": 10.0},
+    "tokens.gemini.input":             {"usd": 2.0},
+    "tokens.gemini.cached":            {"usd": 0.2},
+    "tokens.gemini.output":            {"usd": 12.0},
+    "tokens.gemini-flash.input":       {"usd": 0.75},
+    "tokens.gemini-flash.cached":      {"usd": 0.075},
+    "tokens.gemini-flash.output":      {"usd": 3.75},
+    "tokens.gemini-flash-lite.input":  {"usd": 0.3},
+    "tokens.gemini-flash-lite.cached": {"usd": 0.03},
+    "tokens.gemini-flash-lite.output": {"usd": 2.5},
+    "analysis.gemini":                 {"usd": 0.0, "model": "gemini-3.8-flash"}
   }
 }
