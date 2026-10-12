@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-10-12",
+  "updated": "2026-10-13",
   "unit": "models: USD per 1M tokens / items: USD per unit (枚・秒・回・100万トークン)",
   "models": {
     "claude-haiku-4-5":       {"input": 1.00,  "output": 5.00,  "cache_write": 1.25,  "cache_read": 0.10},
@@ -19,16 +19,19 @@
     "gemini": {"light": "gemini-3.1-flash-lite", "standard": "gemini-3.8-flash", "top": "gemini-3.1-pro-preview"}
   },
   "items": {
-    "image.openai.low":                {"usd": 0.016, "model": "gpt-image-1"},
-    "image.openai.medium":             {"usd": 0.063, "model": "gpt-image-1"},
-    "image.openai.high":               {"usd": 0.25, "model": "gpt-image-1"},
+    "image.openai.low":                {"usd": 0.01, "model": "auto"},
+    "image.openai.medium":             {"usd": 0.02, "model": "auto"},
+    "image.openai.high":               {"usd": 0.08, "model": "auto"},
     "image.gemini.fast":               {"usd": 0.039, "model": "gemini-2.5-flash-image"},
     "image.gemini.standard":           {"usd": 0.039, "model": "gemini-2.5-flash-image"},
     "image.gemini.ultra":              {"usd": 0.039, "model": "gemini-2.5-flash-image"},
     "image.gemini.reference":          {"usd": 0.039, "model": "gemini-2.5-flash-image"},
-    "image.openai.reference":          {"usd": 0.08, "model": "gpt-image-1"},
-    "image.openai.reference.low":      {"usd": 0.033, "model": "gpt-image-1"},
-    "image.openai.reference.high":     {"usd": 0.267, "model": "gpt-image-1"},
+    "image.openai.reference":          {"usd": 0.04, "model": "auto"},
+    "image.openai.reference.low":      {"usd": 0.025, "model": "auto"},
+    "image.openai.reference.high":     {"usd": 0.1, "model": "auto"},
+    "image.openai.sheet.low":          {"usd": 0.025, "model": "auto"},
+    "image.openai.sheet":              {"usd": 0.04, "model": "auto"},
+    "image.openai.sheet.high":         {"usd": 0.1, "model": "auto"},
     "video.runway.turbo":              {"usd": 0.05, "model": "gen4_turbo"},
     "video.veo.fast":                  {"usd": 0.15, "model": "veo-3.0-fast-generate-001"},
     "video.veo.standard":              {"usd": 0.4, "model": "veo-3.0-generate-001"},
